@@ -13,35 +13,54 @@
 
     <h1 class="col-md-12">Expense Organizer</h1>
 
-    <form id="add-purchases" class="col-md-6">
-      <h3>Add Purchases</h3>
-      <label for="description">Description:</label>
-      <input type="text" placeholder="Description" id="description"/>
-      </br>
-      <label for="quantity">Quantity:</label>
-      <input type="number" min="0" placeholder="Quantity" id="quantity"/>
-      </br>
-      <label for="amount">Amount:</label>
-      <input type="number" min="0" placeholder="Amount" id="amount"/>
-      <p></p>
-      <button type="submit" class="btn btn-primary">Track!</button>
-    </form>
-
-    <div id="purchase-list" class="col-md-6">
-      <table class="table-striped" class="col-md-6">
-        <thead>
-          <tr>
-            <th>Description</th>
-            <th>Quantity</th>
-            <th>Amount</th>
-            <th>Total</th>
-          </tr>
-        </thead>
-        <tbody id="tbody-results" class="table-hover">
-        </tbody>
-      </table>
+    <div id="categories-div">
+      <div>
+        <h3>Categories</h3>
+        <form id="category-form">
+          <p>Type in the categories you want to add in the following input box:</p>
+          <label for="category">Category:</label>
+          <input type="text" min="0" placeholder="Add Category" id="category"/>
+          <p></p>
+          <button type="submit" class="btn btn-primary">Add!</button>
+        </form>
+      </div>
+      <div>
+        <h3>List of Categories:</h3>
+        <ul id="cat-results">
+        </ul>
+      </div>
     </div>
 
+    <div id="purchases-and-list-div">
+      <form id="add-purchases" class="col-md-6">
+        <h3>Add Purchases</h3>
+        <label for="description">Description:</label>
+        <input type="text" placeholder="Description" id="description"/>
+        </br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" min="0" placeholder="Quantity" id="quantity"/>
+        </br>
+        <label for="amount">Amount:</label>
+        <input type="number" min="0" placeholder="Amount" id="amount"/>
+        <p></p>
+        <button type="submit" class="btn btn-primary">Track!</button>
+      </form>
+
+      <div id="purchase-list" class="col-md-6">
+        <table class="table-striped" class="col-md-6">
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Quantity</th>
+              <th>Amount</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-results" class="table-hover">
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </body>
 

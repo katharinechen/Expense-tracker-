@@ -1,6 +1,16 @@
+/*#purchases-and-list-div {
+	display: none;
+}
+*/
+
 #add-purchases {
   padding: 40px 40px 40px 40px;
   background-color: #B2FFFF;
+  display: none;
+}
+
+#purchase-list { 
+	display: none;
 }
 
 h1 { 
