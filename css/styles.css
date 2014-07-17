@@ -1,4 +1,26 @@
 #add-purchases {
   padding: 40px 40px 40px 40px;
-  background-color: gray;
+  background-color: #B2FFFF;
 }
+
+h1 { 
+	text-align: center; 
+	padding: 40px 40px 40px 40px;	
+}
+
+form#add-purchases label { 
+	padding-bottom: 2px;
+	padding-top: 10px;
+}
+
+form input {
+	width: 100%; 
+}
+
+th { 
+/*	width: 23%; */
+	font-size: 20px; 
+}
+
+
+

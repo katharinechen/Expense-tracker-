@@ -7,26 +7,41 @@
     <script src="js/scripts.js"></script>
   <title>Expense Tracker</title>
 </head>
-<body>
-  <h1>Expense Organizer</h1>
-  <form id="add-purchases">
-    <p>Add purchase:</p>
-    <input type="text" placeholder="Description" id="description"/>
-    <input type="number" placeholder="Amount" id="amount"/>
-    <button type="submit" class="btn btn-primary">Track!</button>
-  </form>
 
-  <div id="purchase-list">
-    <table class="table-striped">
-      <thead>
-        <tr>
-          <th>Description</th>
-          <th>Amount</th>
-        </tr>
-      </thead>
-      <tbody id="tbody-results">
-      </tbody>
-    </table>
+<body>
+  <div class="container">
+
+    <h1 class="col-md-12">Expense Organizer</h1>
+
+    <form id="add-purchases" class="col-md-6">
+      <h3>Add Purchases</h3>
+      <label for="description">Description:</label>
+      <input type="text" placeholder="Description" id="description"/>
+      </br>
+      <label for="quantity">Quantity:</label>
+      <input type="number" min="0" placeholder="Quantity" id="quantity"/>
+      </br>
+      <label for="amount">Amount:</label>
+      <input type="number" min="0" placeholder="Amount" id="amount"/>
+      <p></p>
+      <button type="submit" class="btn btn-primary">Track!</button>
+    </form>
+
+    <div id="purchase-list" class="col-md-6">
+      <table class="table-striped" class="col-md-6">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Quantity</th>
+            <th>Amount</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody id="tbody-results" class="table-hover">
+        </tbody>
+      </table>
+    </div>
+
   </div>
 </body>
 
